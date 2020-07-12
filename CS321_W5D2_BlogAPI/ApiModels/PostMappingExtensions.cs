@@ -16,9 +16,11 @@ namespace CS321_W5D2_BlogAPI.ApiModels
 				Title = post.Title,
 				Content = post.Content,
 				CommentsAllowed = post.CommentsAllowed,
-                BlogId = post.BlogId,
-                DatePublished = post.DatePublished,
-                // TODO: map blogName and authorName
+				BlogId = post.BlogId,
+				DatePublished = post.DatePublished,
+				// TODO: map blogName and authorName
+				AuthorName = post.Blog.User.FullName,
+				BlogName = post.Blog.Name
 			};
 		}
 
@@ -30,8 +32,8 @@ namespace CS321_W5D2_BlogAPI.ApiModels
 				Title = postModel.Title,
 				Content = postModel.Content,
 				CommentsAllowed = postModel.CommentsAllowed,
-                BlogId = postModel.BlogId,
-                DatePublished = postModel.DatePublished
+				BlogId = postModel.BlogId,
+				DatePublished = postModel.DatePublished
 			};
 		}
 
